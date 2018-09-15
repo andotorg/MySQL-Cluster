@@ -14,4 +14,4 @@
 4. MHA-Cluster 集群模式
 
 ### 集群的详细介绍
-[url](https://zhuanlan.zhihu.com/p/44457085)
+[MySQL高可用集群解决方案选择](https://zhuanlan.zhihu.com/p/44457085)
