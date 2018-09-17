@@ -35,6 +35,6 @@ yum install -y boost-devel check-devel openssl-devel libaio perl perl-devel rsyn
 
 echo "6、安装Development Tools"
 
-yum groupinstall "Development Libraries"
-yum groupinstall "Development Tools"
-yum install ncurses-devel zlib-devel texinfo gtk+-devel gtk2-devel qt-devel tcl-devel tk-devel libX11-devel kernel-headers kernel-devel
+yum groupinstall -y "Development Libraries"
+yum groupinstall -y "Development Tools"
+#yum install -y ncurses-devel zlib-devel texinfo gtk+-devel gtk2-devel qt-devel tcl-devel tk-devel libX11-devel kernel-headers kernel-devel
