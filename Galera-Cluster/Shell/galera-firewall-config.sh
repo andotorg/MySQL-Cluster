@@ -37,8 +37,14 @@ firewall-cmd --zone=public --add-port=4444/tcp --permanent
 firewall-cmd --zone=public --add-port=4567/udp --permanent
 echo "重新启动firewall，使开放端口生效"
 firewall-cmd --reload
-
-
+#echo "创建yum存储库galera.repo"
+#touch /etc/yum.repos.d/galera.repo
+#echo "创建完成，目录为：/etc/yum.repos.d/galera.repo， 请编辑此文件输入源地址"
+echo "下载yum配置文件"
+cd /etc/yum.repos.d
+wget https://raw.githubusercontent.com/andotorg/MySQL-Cluster/master/Galera-Cluster/Repo/galera.repo
+echo "下载完成，准备安装"
+yum install -y galera-3 mysql-wsrep-5.7
 
 
 
